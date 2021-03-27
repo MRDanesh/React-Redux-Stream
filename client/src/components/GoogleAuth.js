@@ -64,7 +64,6 @@ class GoogleAuth extends React.Component {
     };
 
     render() {
-        console.log(this.props.allState)
         return (
             <div>
                 {this.renderAuthBotton()}
@@ -75,8 +74,7 @@ class GoogleAuth extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
-        isSignedIn: state.auth.isSignedIn,
-        allState: state.auth
+        isSignedIn: state.auth.isSignedIn
     };
 ;}
 
